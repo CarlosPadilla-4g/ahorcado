@@ -5,11 +5,11 @@
  id = "com.phengap.app8"
  version = "1.0.0">
  
- <name> app8-Geolocalizacion con google maps</name>
+ <name>Ahorcado</name>
  
  <descripton>
-  Muestra la ubicacion del dis´positivo de acuerdo al GPS y en el mapa de google maps 
- </descripton>
+  juego del ahorcado
+ </descripton> 
  
  <author href="https://build.Phonegap.com" email="carlos_120809@hotmail.com">
   Juan Carlos Padilla Cuautle

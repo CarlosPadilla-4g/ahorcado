@@ -42,6 +42,7 @@ to {top:200px;}
 }
 
 #logo img {
+	width: 40%;
 	text-align:center;
 	border-radius: 50%;
 	border: dotted 5px #fff;
@@ -84,7 +85,7 @@ body {
 }
 												  
 												  
-#opciones {
+#Opciones {
 	background-image:url(../images/imagen.jpg);
 }
 
@@ -119,7 +120,7 @@ input[type="submit"]:hover {
 
                                                  /*Estilo de Jugar*/
 
-#jugar {
+#Jugar {
 	background-image:url(../images/imagen.jpg);
 }
  
@@ -134,11 +135,11 @@ input[type="submit"]:hover {
 	color: #0632FF;
 }
 
-#contenedor_imagen img {
-	margin-left: 10%;
-	width:40%;
-	height: 50;
+#imagen {
+	width:20%;
+	height: auto;
 }
+
 #contenedor_interfaz div{
 	color: #fff;
 	display: inline-block;
