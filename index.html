@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <title>Ahorcado</title>
+
+    <!--grupo CSS-->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        <link rel="stylesheet" href="css/estilo.css" />
+
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+        <script src="phonegap.js"></script><!--nesesario*/--> 
+  </head>
+  <body>
+                                                        <!--Seccion Principal-->  
+     <div data-role="page" id="Principal">
+      <div data-role="main" class="ui-content" align="center">
+       <div id="logo">
+        <img src="images/logo.png">
+       </div> 
+       <div style="width:40%;">
+        <ul data-role="controlgroup" data-type="vertical">
+         <li class="ui-first-child ui-last-child">
+          <a href="#Jugar" data-role="button" id="juga">Jugar</a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Opciones" data-role="button" id="opciones">Opciones</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+
+                                                           <!--Seccion Opciones-->
+     <div data-role="page" id="Opciones"> 
+      <a href="#Principal" class="ui-btn ui-corner-all" style="width: 200px">Regresar</a>
+      <div id="">
+       <input type="text" id="txtIp" name="input2">
+       <span id="btnBuscar" class="ui-btn ui-corner-all" style="width: 150px" > Buscar</span>
+    </div>
+      <div id="cargando">
+       <img src="images/ahorcado1.gif" width="10%" height="auto">
+      </div>
+      <div id="seleccion-opciones">
+       <p>Seleciona una coleciones</p>
+       <select id="colecciones">
+       </select>
+       <span id="btnseleccionar" class="ui-btn ui-corner-all" style="width: 200px" > Seleccionar</span>
+      </div>
+     </div>  
+
+                                                           <!--Seccion Jugar--> 
+     <div data-role="page" id="Jugar">
+      <div id="barra" data-role="header" data-position="fixed" data-tap-toggle="false">
+       <a href="#Principal" class="ui-btn"> Regresar</a>
+       <h2>Ahorcado</h2>
+       <a href="#" id="btn_comenzar" class="ui-btn"> Comenzar</a>
+      </div>
+      <div role="main" class="ui-content">
+      <div id="contenedor_imagen">
+       <img id="imagen" src="images/0.png">
+      </div>
+      <div id="palabra">
+       &nbsp;
+      </div>
+      <div id="contenedor_interfaz">
+       <div>
+       <div id="palabra-error" style="display:none">
+        &nbsp;
+       </div>    
+       <div id="contenedor-letras">
+       </div>
+       <div id="anterior">
+        <i class="fa fa-play"></i>
+       </div>
+       <div id="actual">  
+       </div>
+       <div id="siguiente">
+        <i class="fa fa-chevron-right"></i>
+       </div>
+       </div>
+      </div>
+     </div>
+     <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+      <h3>Palabras encontradas: <span id="encontradas">0</span></h3>
+     </div>                                                                                      
+    </body>
+</html>
